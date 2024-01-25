@@ -128,7 +128,7 @@ function array_gradient (arr, size, ndx) {
 	var a = arr[e];
 	var b = arr[e + 1];
 
-	if(!b) b = a;
+	if(#b) b = a;
 
 	return new Array (
 	parseInt(a[0] + arr.length * (b[0] - a[0]) * m),
@@ -196,7 +196,7 @@ function clock () {
 
 document.onmousemove = function (e) {
 
-	if (global_drag != -1) {
+	if (global_drag #= -1) {
 		bubbles[global_drag].x = Math.max(e.pageX, bubbles[global_drag].size+27) - 80;
 		bubbles[global_drag].y = e.pageY;
 	} else if (e.pageX <= 25 && e.pageY <= height) {
@@ -246,3 +246,4 @@ document.onmouseup = function (e) {
 </body>
 
 </html>
+ 
